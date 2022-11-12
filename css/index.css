@@ -1,60 +1,95 @@
 :root{
-    --primary-theme-color:#20232abf;
+    --primary-theme-color:#20232a;
+    --primary-shadow-color:#20232abf;
     --secondary-theme-color:#282c34;
-    --primary-text-color:#fff ;
-    --primary-highlight:#51dafb;
+    --primary-text-color:#fff;
+    --primary-highlight:#61dafb;
     --primary-font-family:monospace;
 }
 .body{
-    background-color: var(--primary-theme-color);
+    background-color: var(--primary-shadow-color);
     color:var(--primary-text-color);
     font-family: var(--primary-font-family);
     margin: 0;
 }
 
 .hero{
-    background-image: url(https://besthqwallpapers.com/Uploads/16-10-2020/143953/thumb2-security-concept-4k-digital-art-creative-3d-lock.jpg) ;
+    background-image: url(https://besthqwallpapers.com/Uploads/16-10-2020/143953/thumb2-security-concept-4k-digital-art-creative-3d-lock.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+     min-height: 100vh;
+
 }
 .card{
+    
     background-color:var(--primary-theme-color);
-    border: o.125rem solid var(--primary-highlight);
     border-radius: 1rem;
+    box-shadow: 0 0 .125rem 0.125rem white;
     max-width: 320px;
     margin: auto;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 0.125rem 0.125rem white;
-    transition: all 0.25s;
+    transition:box-shadow 0.25s;
+   
+
+}
+.card:hover{
+    border: 0.125rem solid var(--primary-highlight);
+}
+
+.card__header{
+    background-color: var(--primary-shadow-color);
     text-align: center;
     padding: 1rem;
 
+
 }
-.img{
-    margin: auto;
-    overflow: hidden;
+.card__img{
+  
+    background-color: var(--primary-theme-color);
     border-radius: 50%;
-    width: 256px;
+    width: min(100%, 256px);
     height: 256px;
+    object-fit: cover;
+    overflow: hidden;
 }
-.card:hover{
-    box-shadow: 
-    0 0 0.125rem 0.125rem #51dafb;
-   
+.card__body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--secondary-theme-color);
+    padding: 1rem;
+}
+.card__title{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+.card__subtitle{
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+.card__text{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+
+}
+.card__text::after{
+    content:"⌨" ;
+}
+.card__text::before{
+    content:"⌨" ;
+}
+.card__footer{
+    background-color: var(--primary-shadow-color);
+    padding: 1rem;
 }
 .menu{
-    padding: 1rem;
-    gap: 1rem;
-    justify-content: center;
-    list-style: none;
     display: flex;
-
+    justify-content: center;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-

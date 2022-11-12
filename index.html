@@ -1,31 +1,36 @@
 <!DOCTYPE html>
+
 <head>
     <html lang="es">
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de Perfil</title>
-     <link rel="shortcut icon" href="./imagen/pc.svg" type="image/x-icon">
-     <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./imagen/pc.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- BEM -->
 </head>
+
 <body class="body">
     <nain>
         <article class="hero">
             <div class="card">
 
-                <div class="img">
-                    <header>
-                        <img src="./imagen/mi perfil1.jpg" width="200px" height="200px" class="img">
+                <div>
+                    <header class="card__header">
+                        <img src="./imagen/mi perfil1.jpg" width="200px" height="200px" class="card__img">
                     </header>
-                    <section>
+
                 </div>
-                    <h1>Agustin Narvaez Canchumanta</h1>
-                    <h2>👨‍💻Desarrollador👨‍💻 | 🌌Frontend🌌 | ⚛React⚛ | 💻Junior💻 </h2>
-                    <p>
-                    Desarrollador web, estudiante de desarrollo de software, apasionado de vivir sentado frente a la computadora.
+                <section class="card__body">
+                    <h1 class="card__title">Agustin Narvaez Canchumanta</h1>
+                    <h2 class="card__subtitle">👨‍💻Desarrollador👨‍💻 | 🌌Frontend🌌 | ⚛React⚛ | 💻Junior💻 </h2>
+                    <p class="card__text">
+                        Desarrollador web, estudiante de desarrollo de software, apasionado de vivir sentado frente a la
+                        computadora.
                     </p>
                 </section>
-                <footer>
+                <footer class="card__footer">
                     <nav>
                         <ul class="menu">
                             <li>
@@ -36,19 +41,20 @@
                                 <a href="https://www.youtube.com/channel/UCWMIuvKljuvWrUPQ_pYGJfg">
                                     <img src="./imagen/youtube.svg" alt="icono youtube" width="24px" height="24px">
                                 </a>
-            
+
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/agustin.narvaezcanchumanta/">
                                     <img src="./imagen/facebook.svg" alt="icono de facebook" width="24px" height="24px">
                                 </a>
-            
+
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/agus_nc20/">
-                                    <img src="./imagen/instagram.svg" alt="icono de instagram" width="24px" height="24px">
+                                    <img src="./imagen/instagram.svg" alt="icono de instagram" width="24px"
+                                        height="24px">
                                 </a>
-            
+
                             </li>
                             <li>
                                 <a href="https://www.tiktok.com/@narvaez_nc20">
@@ -58,12 +64,13 @@
                         </ul>
                     </nav>
                 </footer>
-                   
-                
+
+
             </div>
         </article>
     </nain>
-    
-    
+
+
 </body>
+
 </html>
