@@ -17,7 +17,8 @@
     background-image: url(https://besthqwallpapers.com/Uploads/16-10-2020/143953/thumb2-security-concept-4k-digital-art-creative-3d-lock.jpg);
     background-position: center;
     background-size: cover;
-     min-height: 100vh;
+    min-height: 100vh;
+    padding: 2rem;
 
 }
 .card{
